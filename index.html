@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- home screen app 全屏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 状态栏 -->
+    <title>气象雷达</title>
+    <!--<title>天气+公众分发</title>-->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/mainapp.css">
+    <!-- endbuild -->
+
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=762b7eea61e352b2a1761ae9f4345092"></script>
+</head>
+<body>
+<div id="mask">
+    <div class="loader">Loading...</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="l_head">
+            <div class="error">服务器正在努力为您运算，请稍候加载查看</div>
+            <div class="dubangguo">未来2小时精准降水预报，精确至分钟级别，精确至街道级别</div>
+            <div class="l_header_play">
+                <div class="l_header_ctrl">
+
+                    <button type="button" id="backward" class="btn mlogicon icon-mlogfont-framelast"></button>
+                    <button type="button" id="play" class="btn btn-default mlogicon icon-mlogfont-play"></button>
+                    <button type="button" id="forward" class="btn btn-default mlogicon icon-mlogfont-framenext"></button>
+                </div>
+                <div class="l_header_timeline">
+                    <div class="line"><span class="time"></span></div>
+                    <div class="day_list"></div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="l_address phoneAddress">
+            <div class="searchform ">
+                <input id="inputCityName" type="text" name="addressSearch" placeholder="搜索全国城市"/>
+                <span class="mlogicon icon-mlogfont-delete"></span>
+                <div id="result1" name="result1"></div>
+            </div>
+            <div class="addressBox">
+                <div class="addressDropdown">
+                    <span>我关注的地址</span>
+                    <span class="mlogicon icon-mlogfont-arrowdown"></span>
+                </div>
+                <ul class="addressList"></ul>
+            </div>
+            <div class="note">
+                <span class="explain">备注说明</span>
+                <span class="desc">临近降水：根据雷达回波的强度和动向，可进行临近天气预报，准确度较高</span>
+            </div>
+        </div>
+        <div class="l_body">
+            <div id="mapContainer"></div>
+            <div class="tip">已经使用网络IP为您进行定位，建议您将常用地点添加至“我关注的地址”，方便随时查询</div>
+            <div class="copyRight">
+                <div class="mlog-icon mlogicon icon-mlogfont-mlog"></div>
+                <span class="copyright-info"></span>
+                <span class="copyright-link">由<a href="http://www.mlogcn.com" target="_blank">象辑科技</a>发布</span>
+            </div>
+            <button type="button" id="china" class="btn btn-xs mlogicon icon-mlogfont-china">西安防汛<br>专用</button>
+            <div class="colorBoard center-block"></div>
+            <div class="infoPanel phoneInfoPanel">
+                <span class="mlogicon icon-mlogfont-delete closePanel"></span>
+                <div class="allCityName"></div>
+                <div id="rainChart"></div>
+                <div id="rainInfo">
+                    <ul class="current">
+                        <li class="temp">
+                            <span>
+                                <div class="now">当前实况</div>
+                                <div id="temp_now"></div>
+                            </span>
+                        </li>
+                        <li class="aqi_cur">空气质量：<span id="aqi_cur_num"></span> <span id="aqi_cur_desc"></span></li>
+                        <li class="wind">风速风向：<span id="wind_num"></span> <span id="wind_dir"></span></li>
+                        <li class="humidity">湿 度：<span id="hum_num"></span></li>
+                    </ul>
+                    <ul class="average">
+                        <li class="aqi">
+                            <span>
+                                <div class="today">今日均值</div>
+                                <div>AQI: <span id="aqi_num"></span></div>
+                            </span>
+                        </li>
+                        <li class="so2">二氧化硫：<span id="so2_num">/</span></li>
+                        <li class="pm25">pm2.5：<span id="pm25_num">/</span></li>
+                        <li class="co">一氧化碳：<span id="co_num">/</span></li>
+                        <li class="pm10">pm10：<span id="pm10_num">/</span></li>
+                        <li class="no">二氧化氮：<span id="no_num">/</span></li>
+                        <li class="o3">臭氧：<span id="o3_num">/</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="lib/jquery.js"></script>
+<script src="lib/highcharts.js"></script>
+<script src="lib/highcharts-more.js"></script>
+<script src="lib/exporting.js"></script>
+<script src="lib/jquery-ui.js"></script>
+<script src="lib/sha1.js"></script>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/map.ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>

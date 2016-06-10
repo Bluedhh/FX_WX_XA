@@ -1,0 +1,54 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-size:2rem">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>公益宣传</title>
+    <link rel="apple-touch-icon" href="resources/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="resources/img/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.3&key=762b7eea61e352b2a1761ae9f4345092&&plugin=AMap.Scale,AMap.OverView,AMap.ToolBar,AMap.Autocomplete,AMap.PlaceSearch,AMap.Geocoder"></script>
+    <script type="text/javascript">
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientHeight = docEl.clientHeight;
+                if (!clientHeight) {
+                    return;
+                }
+                docEl.style.fontSize = parseInt(100 * (clientHeight / 667)) + 'px';
+            };
+
+        if (!doc.addEventListener) {
+            return;
+        }
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="videoXuan" style="text-align: center">
+      <p style="font-size: 0.16rem"><b>地质灾害五部避险法</b></p>
+        <video width="3.2rem" height="2.4rem" poster="resources/img/icon/fist.jpg" autoplay="autoplay">
+            <source src="1.mp4" type="video/mp4">
+            <object data="1.mp4" width="320" height="240rem">
+                <embed src="1.mp4" width="320" height="240rem">
+            </object>
+        </video>
+            </div>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

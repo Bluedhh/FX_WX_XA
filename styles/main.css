@@ -1,0 +1,1016 @@
+body,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+input,
+textarea,
+table,
+th,
+td,
+iframe,
+button {
+    margin: 0;
+    padding: 0
+}
+
+.videoXuan {
+    padding-top: 0.2rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+}
+
+table {
+    width: 100%;
+}
+
+
+ body,input,textarea{font-size:12px;}
+ 
+button,
+select,
+input,
+textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+img,
+button {
+    border: 0
+}
+
+button {
+    background-color: transparent;
+}
+
+button,
+input {
+    line-height: normal;
+    *overflow: visible
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+th {
+    font-weight: normal;
+}
+
+
+/** 文本输入框的 X  **/
+
+input::-ms-reveal {
+    display: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+}
+
+.amap-pancontrol,
+.amap-locate,
+.amap-logo {
+    display: none;
+}
+
+.amap-zoom-touch-minus>div,
+.amap-zoom-touch-plus>div {
+    font-size: 0.28rem;
+}
+
+
+/*loading style start*/
+
+.loadingBG {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.loading {
+    position: absolute;
+    top: 28%;
+    left: 45%;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    margin: 40px auto;
+    -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+    -moz-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+    -o-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+    -ms-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+    animation: sk-rotatePlane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotatePlane {
+    0% {
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+@keyframes sk-rotatePlane {
+    0% {
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+html {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input {
+    border: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: 0
+}
+
+.tabTitle li {
+    height: 34px;
+    line-height: 34px;
+    color: #4196e9;
+    text-align: center;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    cursor: pointer;
+    font-family: '微软雅黑';
+    font-size: 0.15rem;
+}
+
+.fuTitle {
+    background: #eeeeee;
+    padding: 0.06rem 0.05rem 0.08rem 0.05rem;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.tabTitle {
+    height: 0.56rem;
+    line-height: 0.56rem;
+    border: 1px solid #4196e9;
+    margin: 0 auto;
+    display: -webkit-box;
+    -moz-display: -webkit-box;
+    -ms-display: -webkit-box;
+    -o-display: -webkit-box;
+    -webkit-display: -webkit-box;
+    border-radius: 0.03rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.tabTitle li.current {
+    color: #fff;
+    background: #4196e9;
+}
+
+.current-block {
+    display: block;
+}
+
+.tabTitle li {
+    height: 0.56rem;
+    line-height: 0.56rem;
+    color: #4196e9;
+    text-align: center;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    cursor: pointer;
+    font-family: '微软雅黑';
+    font-size: 0.15rem;
+}
+
+.nodataTip li .img {
+    display: inline-block;
+    text-align: center;
+    width: 1.06rem;
+    height: 1.06rem;
+    float: left;
+}
+
+.nodataTip li .imgTitile .header {
+    width: 2.44rem;
+    float: left;
+    display: inline-block;
+}
+
+.nodataTip li img {
+    width: 0.58rem;
+    height: 0.58rem;
+    margin: 0.24rem;
+}
+
+.nodataTip li .header .title {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 0 0;
+    margin-top: 0.24rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.2rem;
+    color: #495977;
+}
+
+.nodataTip li .header .time {
+    font-size: 0.14rem;
+    color: #495977;
+    float: left;
+}
+
+.imgTitile {
+    overflow: hidden;
+    height: 1.06rem;
+    width: 100%;
+}
+
+.nodataTip li .content p {
+    height: auto;
+    width: 100%;
+    font-size: 0.14rem;
+    color: #4A4A4A;
+    line-height: 0.18rem;
+}
+
+.nodataTip li .content {
+    margin-right: 0.24rem;
+    margin-left: 0.24rem;
+    padding-bottom: 0.4rem;
+}
+
+
+/* .nodataTip li:nth-child(odd) {
+    background: #F7F7F7;
+    border: 0px solid #DDDDDD;
+}
+
+.nodataTip li:nth-child(even) {
+    background: #FCFCFC;
+    border: 0px solid #DDDDDD;
+} */
+
+.sh .aLeft {
+    height: 0.6rem;
+    float: left;
+    margin-left: 0.24rem;
+}
+
+.sh .aLeft .title {
+    font-size: 0.14rem;
+    color: #44A6F3;
+    letter-spacing: 0.0064rem;
+    padding: 0px;
+    margin-top: 0.12rem;
+    margin-bottom: 0.08rem;
+}
+
+.shPre li {
+    font-size: 0.14rem;
+    color: #44A6F3;
+    letter-spacing: 0.0064rem;
+    padding: 0px;
+    margin-top: 0.12rem;
+    margin-bottom: 0.08rem;
+    margin-left: 0.13rem;
+}
+
+.sh .content {
+    font-size: 0.14rem;
+    color: #9B9B9B;
+    letter-spacing: 0.0064px;
+    line-height: 0.16rem;
+    margin-left: 0.24rem;
+    margin-right: 0.24rem;
+    margin-bottom: 0.2rem;
+}
+
+.sh .content p {}
+
+.sh .aLeft .time {
+    font-size: 0.12rem;
+    color: #BDBDBD;
+    letter-spacing: 0.0055rem;
+}
+
+.sh .aRight {
+    height: 0.6rem;
+    float: right;
+    margin-right: 0.24rem;
+}
+
+.sh li {
+    overflow: hidden;
+}
+
+.sh img {
+    margin-top: 0.12rem;
+    float: right;
+}
+
+.sh .content {
+    font-size: 0.12rem;
+    color: #BDBDBD;
+    letter-spacing: 0.0055rem;
+}
+
+.td1,
+.water .title {
+    width: 30%;
+    height: 0.4rem;
+}
+
+.td2,
+.water .title2 {
+    width: 25%;
+    height: 40px;
+    text-align: center;
+}
+
+.td3,
+.title3 {
+    width: 20%;
+    height: 0.4rem;
+    text-align: center;
+}
+
+.water .title,
+.title2,
+.title3 {
+    height: 0.4rem;
+    font-size: 0.16rem;
+    color: #9B9B9B;
+    letter-spacing: 0.0064rem;
+}
+
+.city-title,
+.yudao-title,
+.hedao-title,
+.shuiku-title,
+.quxian-title {
+    height: 0.4rem;
+}
+
+.water .td3 {}
+
+.td1,
+.td2 {
+    font-size: 0.14rem;
+    color: #44A6F3;
+    letter-spacing: 0.0064px;
+    line-height: 0.16rem;
+}
+
+.td2 {
+    font-size: 0.16rem;
+    color: #4A4A4A;
+    letter-spacing: 0px;
+}
+
+.water ul:nth-child(odd) {
+    background: #F7F7F7;
+}
+
+.water ul:nth-child(even) {
+    background: #FCFCFC;
+}
+
+.water ul {
+    height: 0.42rem;
+}
+
+.nodataTip li.td3 img,
+.rainCon img,
+.yudao img {
+    display: block;
+    margin: 0 auto;
+    height: 0.2rem;
+    width: 0.2rem;
+    padding-top: 0.1rem;
+}
+
+.waterContainer,
+.waterTwoContainer,
+.rainContainer {
+    margin: 0 auto;
+    height: 2.10rem;
+    width: 3rem;
+}
+
+.chart {
+    height: 3.68rem;
+    width: 3rem;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    /* bottom: 0; */
+    /* left: 0; */
+    /* left: 50%; */
+    /* right: 0; */
+    margin-top: -1.84rem;
+}
+
+.chart img {
+    position: absolute;
+    z-index: 100000;
+    width: 0.32rem;
+    height: 0.32rem;
+    top: -0.12rem;
+    right: -0.12rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.chart .num td {
+    width: 33.33%;
+    font-size: 0.16rem;
+    color: #48B8EE;
+    letter-spacing: 0px;
+    border-right: 1px solid #CCCCCC;
+}
+
+.chart .name td {
+    width: 33.33%;
+    font-size: 0.14rem;
+    color: #9B9B9B;
+    letter-spacing: 0.64px;
+    line-height: 0.16rem;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.chart .legend {
+    height: 0.6rem;
+    width: 3rem;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.hedao .legend {
+    border-bottom-radius-: 5px;
+}
+
+.outWater,
+.inWater {
+    background: #FFFFFF;
+    font-size: 0;
+    width: 3rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CCCCCC;
+    overflow: hidden;
+}
+
+.mask {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.outWater .outWater-name,
+.inWater .inWater-name {
+    text-align: center;
+    width: 50%;
+    line-height: 0.48rem;
+    float: left;
+    color: #9B9B9B;
+    letter-spacing: 0.64px;
+    font-size: 0.14rem;
+}
+
+.outWater .outWater-num,
+.inWater .inWater-num {
+    text-align: center;
+    width: 50%;
+    line-height: 0.48rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #ffffff;
+}
+
+.blockList ul li {
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #fff;
+}
+
+.blockList ul li .huanlu_pic {
+    background-color: rgb(51, 193, 237);
+    border-radius: 5px;
+    width: 0.54rem;
+    line-height: 0.54rem;
+    text-align: center;
+    line-height: 0.54rem;
+    float: left;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    font-size: 0.18rem;
+}
+
+.blockList ul li dl {
+    color: #666673;
+    margin-left: 0.64rem;
+}
+
+.blockList ul li .jiangyu_right dt {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.outWater .outWater-num span,
+.inWater .inWater-num span {
+    display: inline-block;
+    width: 0.66rem;
+    line-height: 0.28rem;
+    background-color: #48B8EE;
+    border-radius: 5px;
+}
+
+.waterNum tr {
+    width: 3rem;
+}
+
+.fangxunClose .content p:nth-child(1) {
+    font-size: 20px;
+    color: #495977;
+    margin-top: 0.3rem;
+    margin-bottom: 0.28rem;
+    text-align: center;
+}
+
+.fangxunClose .content p:nth-child(2) {
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 18px;
+    margin-top: 0.28rem;
+    margin-right: 0.24rem;
+    margin-left: 0.24rem;
+}
+
+.fangxunClose {
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+    height: 6.67rem;
+}
+
+.water td,
+.water th {
+    height: 0.42rem;
+    padding: 0 0.05rem;
+}
+
+.deRainCon .top {
+    font-size: 0.16rem;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    height: 0.56rem;
+    width: 100%;
+    background-image: linear-gradient(-180deg, #48B8EE 0%, #8FD3F4 100%);
+}
+
+.deRainCon .titleTop {
+    margin-left: 0.24rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+.deRainCon .titleTop span:nth-child(2) {
+    float: right;
+    margin-right: 0.24rem;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -0.07rem;
+}
+
+.deRainCon .middle {
+    text-indent: 0.24rem;
+    height: 1rem;
+    width: 100%;
+    background: #F5FAFE;
+    border: 0px solid #DDDDDD;
+}
+
+.deRainCon .middle .time {
+    padding-top: 0.14rem;
+    font-size: 0.14rem;
+    color: #9B9B9B;
+    letter-spacing: 0.0064px;
+    line-height: 0.16rem;
+}
+
+.deRainCon .middle .fallRain,
+.deRainCon .middle .maxRain {
+    padding-top: 0.14rem;
+    font-size: 0.14rem;
+    color: #4A4A4A;
+    line-height: 0.18rem;
+}
+
+table tr {
+    text-align: center;
+}
+
+.overFlow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.map-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+}
+
+#map-yuqing {
+    width: 100%;
+    height: 100%;
+}
+
+#map-shuiqing {
+    width: 100%;
+    height: 100%;
+}
+
+.map-return {
+    position: absolute;
+    top: 0.24rem;
+    left: 0.14rem;
+    width: 0.32rem;
+    height: 0.32rem;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.bubble {
+    position: relative;
+    font-size: 0;
+}
+
+.bubble .bubble-pin {
+    width: 0.27rem;
+    height: 0.3rem;
+    margin: 0.06rem 0;
+}
+
+.bubble .bubble-box {
+    position: absolute;
+    left: 0.27rem;
+    top: 0;
+    border: 0.01rem solid #F84745;
+    background-color: #CFEAF8;
+    font-size: 0.12rem;
+}
+
+.bubble .bubble-box span {
+    display: block;
+    line-height: 0.2rem;
+    padding: 0 0.05rem;
+    white-space: nowrap;
+}
+
+.map-icon {
+    cursor: pointer;
+}
+
+.fenye ul li {
+    float: left;
+    width: 33%;
+    line-height: 0.33rem;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+}
+
+.fenye ul li a {
+    color: black;
+}
+
+.fenye ul li.xifenye {
+    line-height: 0.33rem;
+    text-align: center;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.fenye {
+    font-size: 0.14rem;
+    width: 100%;
+    height: 0.33rem;
+}
+
+.fenye ul li .xab {
+    left: -1px;
+    position: absolute;
+    border: 1px solid #ccc;
+    height: 123px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: -130px;
+    background-color: #fff;
+    display: inline;
+    width: 100%;
+}
+
+.fenye ul li .xab ul {
+    margin-left: 0;
+    padding-bottom: 0;
+}
+
+.fenye ul li .xab ul li {
+    border: 0;
+    padding: 4px 0px;
+    color: black;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.footer {
+    background: #fcfcfc;
+    height: 0.32rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+    width: 100%;
+    border-top: 1px solid #b3b3b3;
+}
+
+.contBox .cityRain table tr:nth-child(1) {
+    position: fixed;
+    width: 100%;
+}
+
+.water li {
+    height: 0.42rem;
+    float: left;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+
+.waterOne .title,
+.waterOne .hedao-content ul .td1,
+.quxian-title .title,
+.quxian-content ul .td1 {
+    width: 40%;
+}
+
+.waterOne .title2,
+.waterOne .title3,
+.waterOne .hedao-content ul .td2,
+.deRainCon .quxian-content ul .td3,
+.deRainCon .quxian-content ul .td2,
+.quxian-title .title2,
+.quxian-title .title3,
+.waterOne .hedao-content ul .td3 {
+    width: 30%;
+}
+
+.city-contant{
+    height: 4.2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.quxian-content {
+    height: 3.63rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%
+}
+
+.quxian,
+.whole-zhan {
+    height: 5.8rem;
+    overflow: auto;
+}
+
+.kepu {
+    height: 4.8rem;
+    width: 100%;
+}
+
+.kepu ul li {
+    float: left;
+    width: 33%;
+    height: 1.6rem;
+    position: relative;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+.kepu ul li img {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.kepu p {
+    font-size: 0.16rem;
+    color: #48B8EE;
+    letter-spacing: 0px;
+}
+
+.kepu-item {
+    text-align: center;
+}
+
+.yingji ul li {
+    float: left;
+    width: 49.6%;
+    height: 1.86rem;
+    position: relative;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+.yingji ul li img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 0.28rem;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.yingji {
+    text-align: center;
+    height: 3.72rem;
+    width: 100%;
+}
+
+.yingji p {
+    font-size: 0.16rem;
+    color: #48B8EE;
+    letter-spacing: 0px;
+}
+
+.shuiku-contant {
+       overflow: scroll;
+    height: 5.2rem;
+    width: 100%;
+}
+
+.hedao-content {
+       width: 100%;
+    height: 5.2rem;
+    overflow: scroll;
+}
+
+.videoXuan {
+    width: 3rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.imgAlarm {
+    text-align: center;
+    height: 6.11rem;
+    background: radial-gradient(50% 102%, #FFFFFF 40%, #F9FCFE 55%, #DDEEFC 86%, #C9E7FF 100%);;
+}
+
+.imgAlarm img{
+    height: 1.64rem;
+    width: 2.65rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.82rem;
+    left: 50%;
+    margin-left: -1.32rem;
+}
